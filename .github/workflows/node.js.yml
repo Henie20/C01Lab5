@@ -28,11 +28,6 @@ jobs:
               uses: actions/setup-node@v3
               with:
                 node-version: ${{ matrix.node-version }}
-    
-            - run: mkdir data
-            - run: cd data
-            - run: mkdir db
-            - run: cd ..
             - run: npm i
             - run: npm run dev
 
