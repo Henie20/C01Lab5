@@ -28,6 +28,7 @@ jobs:
             node-version: ${{ matrix.node-version }}
 
         - run: npm i
+        - run: npm run start
 
     build:
         name: Backend test
@@ -57,5 +58,4 @@ jobs:
             mongodb-version: ${{ matrix.mongodb-version }}
 
         - run: npm i
-
         - run: npm test
